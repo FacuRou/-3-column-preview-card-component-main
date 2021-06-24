@@ -30,7 +30,7 @@ body {
     max-width: 920px;
     padding: 0 40px;
     overflow: hidden;
-    border-radius: 15px;
+
 }
 
 .card {
@@ -39,6 +39,8 @@ body {
 
 .card--sedan {
     background-color: var(--BrightOrange);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .card--suv {
@@ -47,6 +49,8 @@ body {
 
 .card--luxury {
     background-color: var(--VeryDarkCyan);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .card--sedan::before,
@@ -129,4 +133,19 @@ body {
     .container {
         grid-template-columns: 1fr
     }
+
+    .card--sedan {
+
+
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card--luxury {
+
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+
+
 }
